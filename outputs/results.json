@@ -1,0 +1,64 @@
+{
+  "metrics": [
+    {
+      "model": "Baseline 1: Mean RUL",
+      "RMSE": 40.58,
+      "MAE": 35.07,
+      "NASA_score": 18669.5
+    },
+    {
+      "model": "Baseline 2: Random Forest",
+      "RMSE": 16.37,
+      "MAE": 11.7,
+      "NASA_score": 653.5
+    },
+    {
+      "model": "LSTM (ours)",
+      "RMSE": 13.52,
+      "MAE": 10.18,
+      "NASA_score": 313.4
+    }
+  ],
+  "alert": {
+    "engines_truly_due": 25,
+    "correctly_flagged": 23,
+    "missed (dangerous)": 2,
+    "false_alarms": 2,
+    "within_+-20_cycles_%": 85.0,
+    "late_predictions_%": 50.0
+  },
+  "features_used": [
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "dropped": [
+    "s1",
+    "s5",
+    "s6",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "epochs_trained": 40,
+  "best_val_rmse": 11.91,
+  "settings": {
+    "WINDOW": 30,
+    "RUL_CAP": 125,
+    "HIDDEN": 64,
+    "LR": 0.001,
+    "BATCH": 256
+  }
+}
