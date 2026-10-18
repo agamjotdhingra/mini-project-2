@@ -2,6 +2,8 @@
 
 AI Mini Project 2 (Semester 2). Predicts how many operating cycles a turbofan engine has left before failure, using multi-sensor time-series data and an LSTM.
 
+Repository: https://github.com/agamjotdhingra/mini-project-2.git
+
 ## Pipeline
 1. **Define**: Input = 14 sensors x last 30 cycles; Output = RUL (cycles)
 2. **Data**: NASA C-MAPSS, subset FD001 (100 run-to-failure engines, 21 sensors)
